@@ -16,7 +16,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://marijanbrvar.github.io/math-magicians-app/)
 
 
 ## Getting Started
@@ -28,17 +28,25 @@ Additional description about the project and its features.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+- Chrome browser
+- Node v14.XX >
+- npm (usually already installed with current node version)
 
 ### Setup
+To run code locally, please follow steps belove
+1. `git@github.com:marijanbrvar/math-magicians-app.git && cd math-magicians-app`
+2. run `npm install`
+3. then run `npm run start`
 
-### Install
-
+webpack will automatically open the default browser, and you can see uset interface of the MathMagicians web app.
+Calculator's functionality will be added soon, stay tuned and press star on my project!
 ### Usage
-
+TBA
 ### Run tests
+TBA
 
 ### Deployment
-
+TBA
 
 
 ## Authors
