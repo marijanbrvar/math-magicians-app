@@ -1,29 +1,21 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable react/prefer-stateless-function */
-import { Component } from 'react';
 import PropTypes from 'prop-types';
 import AutoScalingText from './AutoScalingText';
 
-class Display extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const Display = (props) => {
+  const { display } = props;
 
-  handleChange = (e) => {
-    const { display } = this.props;
+  function handleChange(e) {
     e.target.value = display;
   }
 
-  render() {
-    const { display } = this.props;
-    return (
-      <div className="calc-display">
-        <AutoScalingText>{display}</AutoScalingText>
-      </div>
-    );
-  }
-}
+  return (
+    <div className="calc-display" onChange={handleChange}>
+      <AutoScalingText>{display}</AutoScalingText>
+    </div>
+  );
+};
 
 Display.propTypes = {
   display: PropTypes.string.isRequired,
