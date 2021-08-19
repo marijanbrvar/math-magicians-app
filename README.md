@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Math Magicians: setup
+# Math Magicians: events
 
 > This is the first project of the Math Magicians application. I will set up the environment and tools needed to develop a React application.
 
@@ -41,7 +41,8 @@ To run code locally, please follow steps belove
 webpack will automatically open the default browser, and you can see uset interface of the MathMagicians web app.
 Calculator's functionality will be added soon, stay tuned and press star on my project!
 ### Usage
-TBA
+The Basic Calculator can be used to perform the operations of addition, subtraction, multiplication, and
+division. It also has the ability to recognize both positive and negative numbers. 
 ### Run tests
 TBA
 
