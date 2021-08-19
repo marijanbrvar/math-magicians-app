@@ -1,46 +1,30 @@
 /* eslint-disable react/button-has-type */
+import PropTypes from 'prop-types';
 import { Component } from 'react';
+import BonusList from './ButtonList';
+import Display from './Display';
 
 // eslint-disable-next-line react/prefer-stateless-function
 export default class Calculator extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
   render() {
+    const { display, click } = this.props;
     return (
       <>
         <div className="calc">
-          <div className="calc-display">
-            <div className="auto-scaling-text">0</div>
-          </div>
-          <div className="keypad">
-            <div className="input-keys">
-              <div className="function-keys">
-                <button className="key" onClick="{console.log('C')}">C</button>
-                <button className="key" onClick="{console.log('C')}">±</button>
-                <button className="key" onClick="{console.log('C')}">%</button>
-              </div>
-              <div className="digit-keys">
-                <button className="key key-0">0</button>
-                <button className="key key-dot">●</button>
-                <button className="key">1</button>
-                <button className="key">2</button>
-                <button className="key">3</button>
-                <button className="key">4</button>
-                <button className="key">5</button>
-                <button className="key">6</button>
-                <button className="key">7</button>
-                <button className="key">8</button>
-                <button className="key">9</button>
-              </div>
-            </div>
-            <div className="operator-keys">
-              <button className="key">÷</button>
-              <button className="key key-multiply">×</button>
-              <button className="key">−</button>
-              <button className="key">+</button>
-              <button className="key">=</button>
-            </div>
-          </div>
+          <Display display={display} />
+          <BonusList handleClick={click} />
         </div>
       </>
     );
   }
 }
+
+Calculator.propTypes = {
+  display: PropTypes.string.isRequired,
+  click: PropTypes.func.isRequired,
+};
