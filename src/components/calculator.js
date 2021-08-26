@@ -7,12 +7,18 @@ const Calculator = (props) => {
   const { display, click } = props;
 
   return (
-    <>
-      <div className="calc">
-        <Display display={display} />
-        <BonusList handleClick={click} />
+    <div className="container">
+      <div>
+        <h1>Calculator</h1>
+        <p>Lets do some Math!</p>
       </div>
-    </>
+      <div className="calc-container">
+        <div className="calc">
+          <Display display={display} />
+          <BonusList handleClick={click} />
+        </div>
+      </div>
+    </div>
   );
 };
 
