@@ -1,0 +1,15 @@
+.home-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+ul li {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2rem;
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
