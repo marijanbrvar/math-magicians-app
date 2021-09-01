@@ -17,6 +17,8 @@ Additional description about the project and its features.
 ## Live Demo
 
 [Live Demo Link](https://marijanbrvar.github.io/math-magicians-app/)
+[Live Demo Link @ HEROKU](https://mb-math-magicians-app.herokuapp.com/)
+[Live Demo Link @ NETLIFY](https://angry-carson-4515d4.netlify.app)
 
 
 ## Getting Started
